@@ -3,6 +3,20 @@
 
 public partial class MainWindow
 {
+	private global::Gtk.HPaned hpaned1;
+	private global::Gtk.Table table2;
+	private global::Gtk.Button button_00_pos;
+	private global::Gtk.Button button_01_pos;
+	private global::Gtk.Button button_02_pos;
+	private global::Gtk.Button button_10_pos;
+	private global::Gtk.Button button_11_pos;
+	private global::Gtk.Button button_12_pos;
+	private global::Gtk.Button button_20_pos;
+	private global::Gtk.Button button_21_pos;
+	private global::Gtk.Button button_22_pos;
+	private global::Gtk.VBox vbox1;
+	private global::Gtk.Label label2;
+	
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
@@ -10,12 +24,165 @@ public partial class MainWindow
 		this.Name = "MainWindow";
 		this.Title = global::Mono.Unix.Catalog.GetString ("MainWindow");
 		this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+		// Container child MainWindow.Gtk.Container+ContainerChild
+		this.hpaned1 = new global::Gtk.HPaned ();
+		this.hpaned1.CanDefault = true;
+		this.hpaned1.CanFocus = true;
+		this.hpaned1.Name = "hpaned1";
+		this.hpaned1.Position = 400;
+		// Container child hpaned1.Gtk.Paned+PanedChild
+		this.table2 = new global::Gtk.Table (((uint)(3)), ((uint)(3)), false);
+		this.table2.Name = "table2";
+		this.table2.RowSpacing = ((uint)(6));
+		this.table2.ColumnSpacing = ((uint)(6));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_00_pos = new global::Gtk.Button ();
+		this.button_00_pos.Name = "button_00_pos";
+		this.button_00_pos.FocusOnClick = false;
+		this.button_00_pos.Label = "..";
+		this.table2.Add (this.button_00_pos);
+		// Container child table2.Gtk.Table+TableChild
+		this.button_01_pos = new global::Gtk.Button ();
+		this.button_01_pos.Name = "button_01_pos";
+		this.button_01_pos.FocusOnClick = false;
+		this.button_01_pos.Label = "..";
+		this.table2.Add (this.button_01_pos);
+		global::Gtk.Table.TableChild w2 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_01_pos]));
+		w2.LeftAttach = ((uint)(1));
+		w2.RightAttach = ((uint)(2));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_02_pos = new global::Gtk.Button ();
+		this.button_02_pos.CanFocus = true;
+		this.button_02_pos.Name = "button_02_pos";
+		this.button_02_pos.FocusOnClick = false;
+		this.button_02_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_02_pos);
+		global::Gtk.Table.TableChild w3 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_02_pos]));
+		w3.LeftAttach = ((uint)(2));
+		w3.RightAttach = ((uint)(3));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_10_pos = new global::Gtk.Button ();
+		this.button_10_pos.CanFocus = true;
+		this.button_10_pos.Name = "button_10_pos";
+		this.button_10_pos.FocusOnClick = false;
+		this.button_10_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_10_pos);
+		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_10_pos]));
+		w4.TopAttach = ((uint)(1));
+		w4.BottomAttach = ((uint)(2));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_11_pos = new global::Gtk.Button ();
+		this.button_11_pos.CanFocus = true;
+		this.button_11_pos.Name = "button_11_pos";
+		this.button_11_pos.FocusOnClick = false;
+		this.button_11_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_11_pos);
+		global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_11_pos]));
+		w5.TopAttach = ((uint)(1));
+		w5.BottomAttach = ((uint)(2));
+		w5.LeftAttach = ((uint)(1));
+		w5.RightAttach = ((uint)(2));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_12_pos = new global::Gtk.Button ();
+		this.button_12_pos.CanFocus = true;
+		this.button_12_pos.Name = "button_12_pos";
+		this.button_12_pos.FocusOnClick = false;
+		this.button_12_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_12_pos);
+		global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_12_pos]));
+		w6.TopAttach = ((uint)(1));
+		w6.BottomAttach = ((uint)(2));
+		w6.LeftAttach = ((uint)(2));
+		w6.RightAttach = ((uint)(3));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_20_pos = new global::Gtk.Button ();
+		this.button_20_pos.CanFocus = true;
+		this.button_20_pos.Name = "button_20_pos";
+		this.button_20_pos.FocusOnClick = false;
+		this.button_20_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_20_pos);
+		global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_20_pos]));
+		w7.TopAttach = ((uint)(2));
+		w7.BottomAttach = ((uint)(3));
+		w7.XOptions = ((global::Gtk.AttachOptions)(4));
+		w7.YOptions = ((global::Gtk.AttachOptions)(4));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_21_pos = new global::Gtk.Button ();
+		this.button_21_pos.CanFocus = true;
+		this.button_21_pos.Name = "button_21_pos";
+		this.button_21_pos.FocusOnClick = false;
+		this.button_21_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_21_pos);
+		global::Gtk.Table.TableChild w8 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_21_pos]));
+		w8.TopAttach = ((uint)(2));
+		w8.BottomAttach = ((uint)(3));
+		w8.LeftAttach = ((uint)(1));
+		w8.RightAttach = ((uint)(2));
+		// Container child table2.Gtk.Table+TableChild
+		this.button_22_pos = new global::Gtk.Button ();
+		this.button_22_pos.CanFocus = true;
+		this.button_22_pos.Name = "button_22_pos";
+		this.button_22_pos.FocusOnClick = false;
+		this.button_22_pos.Label = global::Mono.Unix.Catalog.GetString ("..");
+		this.table2.Add (this.button_22_pos);
+		global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table2 [this.button_22_pos]));
+		w9.TopAttach = ((uint)(2));
+		w9.BottomAttach = ((uint)(3));
+		w9.LeftAttach = ((uint)(2));
+		w9.RightAttach = ((uint)(3));
+		this.hpaned1.Add (this.table2);
+		global::Gtk.Paned.PanedChild w10 = ((global::Gtk.Paned.PanedChild)(this.hpaned1 [this.table2]));
+		w10.Resize = false;
+		// Container child hpaned1.Gtk.Paned+PanedChild
+		this.vbox1 = new global::Gtk.VBox ();
+		this.vbox1.Name = "vbox1";
+		this.vbox1.Spacing = 6;
+		// Container child vbox1.Gtk.Box+BoxChild
+		this.label2 = new global::Gtk.Label ();
+		this.label2.Name = "label2";
+		this.label2.Xalign = 0F;
+		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("label2");
+		this.vbox1.Add (this.label2);
+		global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.label2]));
+		w11.Position = 0;
+		w11.Expand = false;
+		w11.Fill = false;
+		this.hpaned1.Add (this.vbox1);
+		this.Add (this.hpaned1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 400;
-		this.DefaultHeight = 300;
+		this.DefaultWidth = 551;
+		this.DefaultHeight = 395;
+		this.hpaned1.HasDefault = true;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
+		this.button_22_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_22_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_22_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_21_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_21_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_21_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_20_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_20_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_20_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_12_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_12_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_12_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_11_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_11_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_11_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_10_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_10_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_10_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_02_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_02_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_02_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_01_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_01_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_01_pos.Pressed += new global::System.EventHandler (this.clickPosition);
+		this.button_00_pos.Entered += new global::System.EventHandler (this.enterPosition);
+		this.button_00_pos.Left += new global::System.EventHandler (this.leavePosition);
+		this.button_00_pos.Pressed += new global::System.EventHandler (this.clickPosition);
 	}
 }
